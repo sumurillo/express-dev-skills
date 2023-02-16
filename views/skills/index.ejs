@@ -7,16 +7,16 @@
     <title>Skills</title>
 </head>
 <body>
-    <h1>Todos</h1>
-    <ul>
-      <% todos.forEach(function(t) { %>
-        <li>
-          <%= t.todo %>
-            - 
-          <%= t.done ? 'done' : 'not done' %>
-        </li>
-      <% }); %>
-    </ul>
-  </body>
+  <h1>Skills</h1>
+  <ul>
+    <% skills.forEach(function(t) { %>
+      <li>
+        <a href=“/skills/<%= t.id %>“><%= t.skill %></a>
+          -
+        <%= t.done ? 'done' : 'not done' %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
 
-</html>
+</html> 
